@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/icons/logo.png" type="image/x-icon">
     <title>Penguin-Fashion</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,23 +24,20 @@
 </head>
 <body class="font-roboto ">
     <header class="bg-[#FFFBF0] max-w-7xl m-auto px-5">
-        <nav class="flex items-center justify-between pt-8 pb-14">
-            <div class="logo">
-                <img class="w-60" src="./icons/logo.png" alt="">
-            </div>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 md:hidden">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-              </svg>
-              
-            <div class="nav-item hidden md:inline-flex">
-            <ul class="flex ">
-                <li class="mr-12"><a href=""></a>Home</li>
-                <li class="mr-12"><a href="">Product</a></li>
-                <li class="mr-12"><a href="">About us</a></li>
-                <li class="mr-12"><a href="">Contact us</a></li>
-            </ul>      
-            </div>
-        </nav>
+        <div class="max-w-7xl mx-auto px-5 py-6 flex items-center justify-between">
+            <img class="w-36" src="./icons/logo.png" alt="Penguin Fashion Logo">
+            <nav class="hidden md:flex space-x-8">
+                <a href="/index.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Home</a>
+                <a href="/product.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Products</a>
+                <a href="/about.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">About Us</a>
+                <a href="/contact.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Contact Us</a>
+            </nav>
+            <button class="md:hidden text-[#363958] focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
         <!-- banner section starts here -->
          <section class="banner md:flex justify-around md:items-center">
             <div>
@@ -205,8 +203,10 @@
          </section>
       
     </main>
-    <footer>
-
+    <footer class="bg-[#363958] py-6 mt-16">
+        <div class="max-w-7xl mx-auto px-5 text-center text-white">
+            <p>&copy; 2025 Penguin Fashion. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Penguin Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#FFFBF0] font-roboto">
+    <header class="bg-[#FFFBF0] border-b">
+        <div class="max-w-7xl mx-auto px-5 py-6 flex items-center justify-between">
+            <img class="w-36" src="./icons/logo.png" alt="Penguin Fashion Logo">
+            <nav class="hidden md:flex space-x-8">
+                <a href="/index.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Home</a>
+                <a href="/product.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Products</a>
+                <a href="/about.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">About Us</a>
+                <a href="/contact.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Contact Us</a>
+            </nav>
+            <button class="md:hidden text-[#363958] focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-5 py-10">
+        <section class="text-center mb-16">
+            <h1 class="text-5xl font-bebas text-[#363958]">Contact Us</h1>
+            <p class="text-[#363958] mt-4">We would love to hear from you! Please fill out the form below or contact us directly.</p>
+        </section>
+
+        <section class="bg-white p-8 rounded-xl shadow-lg max-w-3xl mx-auto">
+            <form class="space-y-6">
+                <div>
+                    <label for="name" class="block text-[#363958] font-medium mb-2">Full Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FABE4C]">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-[#363958] font-medium mb-2">Email Address</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FABE4C]">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-[#363958] font-medium mb-2">Message</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Type your message here" class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-[#FABE4C]"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3 bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white rounded-lg font-medium hover:opacity-90">Send Message</button>
+            </form>
+        </section>
+
+        <section class="mt-16 text-center">
+            <h2 class="text-3xl font-bebas text-[#363958]">Our Contact Details</h2>
+            <p class="text-[#363958] mt-4">Feel free to reach us at:</p>
+            <p class="text-[#363958] font-medium mt-2">Phone: +1 234 567 890</p>
+            <p class="text-[#363958] font-medium">Email: support@penguinfashion.com</p>
+            <p class="text-[#363958] font-medium">Address: 123 Fashion Street, New York, NY</p>
+        </section>
+    </main>
+
+    <footer class="bg-[#363958] py-6 mt-16">
+        <div class="max-w-7xl mx-auto px-5 text-center text-white">
+            <p>&copy; 2025 Penguin Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

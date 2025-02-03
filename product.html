@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page - Penguin Fashion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,300;0,400;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+        .font-roboto {
+            font-family: "Roboto", sans-serif;
+        }
+        .font-bebas {
+            font-family: "Bebas Neue", sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#FFFBF0] font-roboto">
+    <header class="bg-[#FFFBF0] border-b">
+        <div class="max-w-7xl mx-auto px-5 py-6 flex items-center justify-between">
+            <img class="w-36" src="./icons/logo.png" alt="Penguin Fashion Logo">
+            <nav class="hidden md:flex space-x-8">
+                <a href="/index.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Home</a>
+                <a href="/product.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Products</a>
+                <a href="/about.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">About Us</a>
+                <a href="/contact.html" class="text-[#363958] hover:text-[#FABE4C] font-medium">Contact Us</a>
+            </nav>
+            <button class="md:hidden text-[#363958] focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-5 py-10">
+        <section class="text-center mb-16">
+            <h1 class="text-5xl font-bebas text-[#363958]">Winter Collection</h1>
+            <p class="text-[#363958] mt-4">Explore our premium range of jackets to stay warm this winter.</p>
+        </section>
+
+        <section class="grid md:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-5 rounded-xl shadow-lg">
+                <img src="./images/jacket-1.png" alt="Yellow Coat Jacket" class="rounded-lg bg-[#F1F1F1] p-4 mb-4">
+                <h3 class="text-xl font-semibold text-[#363958] mb-2">Yellow Coat Jacket</h3>
+                <p class="text-sm text-[#363958] mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-[#FABE4C] text-2xl font-bold">$234</span>
+                    <button class="px-6 py-2 bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white rounded-lg font-medium hover:opacity-90">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white p-5 rounded-xl shadow-lg">
+                <img src="./images/jacket-2.png" alt="Ladies Jacket" class="rounded-lg bg-[#F1F1F1] p-4 mb-4">
+                <h3 class="text-xl font-semibold text-[#363958] mb-2">Ladies Jacket</h3>
+                <p class="text-sm text-[#363958] mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-[#FABE4C] text-2xl font-bold">$234</span>
+                    <button class="px-6 py-2 bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white rounded-lg font-medium hover:opacity-90">Buy Now</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white p-5 rounded-xl shadow-lg">
+                <img src="./images/jacket-3.png" alt="Woman Leather Jacket" class="rounded-lg bg-[#F1F1F1] p-4 mb-4">
+                <h3 class="text-xl font-semibold text-[#363958] mb-2">Woman Leather Jacket</h3>
+                <p class="text-sm text-[#363958] mb-4">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <div class="flex items-center justify-between">
+                    <span class="text-[#FABE4C] text-2xl font-bold">$234</span>
+                    <button class="px-6 py-2 bg-gradient-to-r from-[#A4BC46] to-[#85A019] text-white rounded-lg font-medium hover:opacity-90">Buy Now</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#363958] py-6 mt-16">
+        <div class="max-w-7xl mx-auto px-5 text-center text-white">
+            <p>&copy; 2025 Penguin Fashion. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
